@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link to="/">Home</Link>
       {user ? (
         <>
-          <span>Welcome, {user.username}</span>
+          <span>Welcome, {user.name}</span>
           <button onClick={logout}>Logout</button>
         </>
       ) : (

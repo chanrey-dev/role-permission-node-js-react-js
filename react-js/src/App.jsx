@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 import UserList from "./pages/UserList";
+import Unauthorized from "./components/Unauthorized";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/unauthorized" element={<h1>403 - Unauthorized</h1>} />
+          <Route path="/unauthorized" element={<Unauthorized />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

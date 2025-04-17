@@ -33,7 +33,6 @@ const Login = () => {
           placeholder="johndoe"
           value={form.name}
           onChange={handleChange}
-          required
         />
         <br />
         <input
@@ -42,7 +41,6 @@ const Login = () => {
           placeholder="Password"
           value={form.password}
           onChange={handleChange}
-          required
         />
         <br />
         <button type="submit">Login</button>
